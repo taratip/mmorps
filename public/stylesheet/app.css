@@ -1,0 +1,60 @@
+body {
+  background-color: gray;
+  margin: 10px;
+}
+
+.body-wrapper {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+}
+
+h1, h2 {
+  padding: 20px 0 5px 10px;
+}
+
+.header-wrapper {
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.player-wrapper {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  margin-left: 20px;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+.player-list {
+  margin: 5px 0 5px 0;
+  padding-left: 0;
+}
+
+.player-list > li {
+  list-style: none;
+}
+
+.left-col {
+  width: 10%;
+  float: left;
+  display: inline-block;
+}
+
+.right-col {
+  display: inline-block;
+}
+
+.button-wrapper {
+  margin: 20px 0 20px 0;
+}
+
+p { padding-left: 20px;}
+
+form {
+  padding: 10px;
+}

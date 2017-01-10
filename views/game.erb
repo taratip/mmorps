@@ -1,0 +1,35 @@
+<div class="body-wrapper">
+  <h1>MMORPS</h1>
+  <div class="message-wrapper">
+  </div>
+    <div class="header-wrapper">
+      <div class="left-col">Player</div>
+      <div class="right-col">Score</div>
+      <div class="player-wrapper">
+        <ul class="player-list">
+          <li>
+            <div class="left-col">Human:</div>
+          </li>
+          <li>
+            <div class="right-col"><%= @human_score %></div>
+          </li>
+        </ul>
+        <ul class="player-list">
+          <li>
+            <div class="left-col">Computer:</div>
+          </li>
+          <li>
+            <div class="right-col"><%= @computer_score %></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <h2>Choose!</h2>
+  <form action="/playgame" method="post">
+    <div class="button-wrapper">
+      <input type="submit" name="selection" value="Rock">
+      <input type="submit" name="selection" value="Paper">
+      <input type="submit" name="selection" value="Scissors">
+    </div>
+  </div>
+</div>

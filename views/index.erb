@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Massively Multiplayer Online Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="/stylesheet/app.css">
+  </head>
+  <body>
+    <% if session[:game] %>
+      <div class="body-wrapper">
+        <h1>MMORPS</h1>
+        <div class="message-wrapper">
+          <% if @messagae.nil? %>
+          <%= @message %>
+          <% end %>
+        </div>
+          <div class="header-wrapper">
+            <div class="left-col">Player</div>
+            <div class="right-col">Score</div>
+            <div class="player-wrapper">
+              <ul class="player-list">
+                <li>
+                  <div class="left-col">Human:</div>
+                </li>
+                <li>
+                  <div class="right-col"><%= @human_score %></div>
+                </li>
+              </ul>
+              <ul class="player-list">
+                <li>
+                  <div class="left-col">Computer:</div>
+                </li>
+                <li>
+                  <div class="right-col"><%= @computer_score %></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <h2>Choose!</h2>
+        <form action="/playgame" method="post">
+          <div class="button-wrapper">
+            <input type="submit" name="selection" value="Rock">
+            <input type="submit" name="selection" value="Paper">
+            <input type="submit" name="selection" value="Scissors">
+          </div>
+        </div>
+      </div>
+    <% else %>
+      <%= erb :game %>
+    <% end %>
+  </body>
+</html>
